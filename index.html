@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="app-name">
+        <h4 class="title-type"></h4>
+      </div>
+      <div class="password-box">
+        <input
+          type="text"
+          class="pass-value"
+          value="9s3f@2sa"
+          id="pass-input"
+          readonly
+        />
+        <i class="material-icons" id="copy-btn" onclick="copyText()"
+          >content_copy</i
+        >
+      </div>
+      <div class="indicator-box">
+        <div></div>
+        <div class="indicator"></div>
+      </div>
+      <p class="pass-setting-title">Password Settings</p>
+      <div class="password-length-box">
+        <span>Password Length</span>
+        <span class="pass-length-value">6</span>
+        <input type="range" class="pass-slider" min="6" max="32" value="6" />
+      </div>
+      <div class="settings">
+        <div class="lowercase">
+          <input type="checkbox" id="lowercase" checked />
+          <span>Lowercase(a-z)</span>
+        </div>
+        <div class="uppercase">
+          <input type="checkbox" id="uppercase" />
+          <span>Uppercase(A-Z)</span>
+        </div>
+        <div class="numbers">
+          <input type="checkbox" id="numbers" />
+          <span>Numbers(0-9)</span>
+        </div>
+        <div class="symbols">
+          <input type="checkbox" id="symbols" />
+          <span>Symbols(!-$#@)</span>
+        </div>
+        <button class="generate-btn">Generate Password</button>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
